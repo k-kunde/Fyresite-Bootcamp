@@ -1,0 +1,13 @@
+> HTML elements are semantic
+> HTML structure follows logical structure
+> HTML structure is independent of styling and positioning
+
+> IMG have alt attributes
+
+> HEADING attributes fall in sequential order        
+> TITLE element is concise
+> TITLE element is descriptive
+
+> CSS selectors and properties follow semantic structure of
+    the html
+> CSS includes comments before each element or section
