@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <title>Bookings</title>
+  
+  <style>
+   [class*="a"] {
+      font-size: x-large;
+      font-family: fantasy;
+    }
+
+    [class*="col"] {
+      color: black;
+      text-align: start;
+      align-self: center;
+      margin: 0;
+      font-family: fantasy
+    }
+    
+    [class*="row"] {
+      color: black;
+      justify-content: center;
+    }
+  </style>
+<!-- Navbar -->
+  <div class="container-fluid d-flex justify-content-around"></div>
+    <nav class="navbar m-0 navbar-nav navbar-expand navbar-dark bg-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item mx-3">
+          <a class="nav-link text-white" href="Index.html">About</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link text-white" href="Portfolio.html">Music</a>
+        </li>
+        <liv class="nav-item mx-3">
+          <a class="nav-link text-white" href="Contact.html">Bookings</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+<!--- Background Image-->
+    <div class="bg-img img-fluid" style="
+      background-image: url('Images/band.jpg');
+      background-repeat: no-repeat;
+      background-color: rgb(48, 48, 48);
+      background-size: cover;
+      background-position: center;
+      height: 85vh;
+      ">
+      <div class="mask p-2" style="
+        background-color: rgba(0, 0, 0, 0.541);
+        font-family: fantasy;
+        ">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <span class="border border-4 pb-2 pt-3 px-2 rounded">
+            <h1 class="text-white mb-0">Drowning Divergent</h1>
+          </span>
+        </div>
+      </div>
+    </div>          
+</head>
+<!--------------- 
+    Layout 
+--------------->
+
+<body>
+  <div class="container-fluid p-0 bg-dark">
+    <div class="mask p-2" style="
+      background-color: rgba(0, 0, 0, 0.541);
+      font-family:fantasy;
+      ">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <span class="border border-white border-2 rounded pb-0 pt-3 px-2">
+          <h2 class="text-white mb-0">Contact for Availability</h2>
+        </span>
+      </div>
+    </div>
+      <div class="row">
+          <div class="col-8 my-5">
+            <div class="mb-3">
+              <label for="contactName" class="form-label text-white fs-5">Name</label>
+              <input type="text" class="form-control" id="contactName" placeholder="name">
+            <div class="mb-2">
+              <label for="contactEmail" class="form-label text-white mt-3 fs-5">Email Address</label>
+              <input type="email" class="form-control" id="contactEmail" placeholder="email address">
+            </div>
+            <div class="mb-3">
+              <label for="contactMessage" class="form-label text-white fs-5">Message</label>
+              <textarea class="form-control" id="contactMessage" rows="3"></textarea>
+            </div>
+          </div>
+            
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <title>Music</title>
+  
+  <style>
+   [class*="a"] {
+      font-size: x-large;
+      font-family: fantasy;
+    }
+
+    [class*="col"] {
+      color: black;
+      text-align: center;
+      align-self: center;
+      margin: 0;
+      font-family: fantasy
+    }
+    
+    [class*="row"] {
+      color: black;
+      justify-content: center;
+    }
+
+    [class*="card"] {
+      background-color: rgba(0, 0, 0, 0.555);
+      color: #fff;
+      text-align: center;
+      font-size: x-large;
+    } 
+  </style>
+
+<!-- Navbar -->
+  <nav class="navbar m-0 navbar-nav navbar-expand navbar-dark bg-dark">
+    <div class="container-fluid d-flex justify-content-around">
+      <ul class="navbar-nav">
+        <li class="nav-item mx-3">
+          <a class="nav-link text-white" href="Index.html">About</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link text-white" href="Portfolio.html">Music</a>
+        </li>
+        <liv class="nav-item mx-3">
+          <a class="nav-link text-white" href="Contact.html">Bookings</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!--- Background Image-->
+    <div class="bg-img img-fluid" style="
+      background-image: url('Images/band.jpg');
+      background-repeat: no-repeat;
+      background-color: rgb(48, 48, 48);
+      background-size: cover;
+      background-position: center;
+      height: 85vh;
+      ">
+      <div class="mask p-2" style="
+        background-color: rgba(0, 0, 0, 0.541);
+        font-family: fantasy;
+        ">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <span class="border border-4 pb-2 pt-3 px-2 rounded">
+            <h1 class="text-white mb-0">Drowning Divergent</h1>
+          </span>
+        </div>
+      </div>
+    </div>          
+</head>
+
+<!-------------- 
+  Layout
+---------------->
+<body>
+  <div class="container-fluid m-0 p-0 bg-dark">
+    <div class="mask p-2" style="
+      background-color: rgba(0, 0, 0, 0.541);
+      font-family:fantasy;
+      ">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <span class="border border-white border-2 rounded pb-0 pt-3 px-2">
+          <h2 class="text-white mb-0">Albums</h2>
+        </span>
+      </div>
+    </div>
+
+    <!-- Album Covers-->
+    <div class="card-group mt-4">
+      <div class="card m-4">
+        <span class="border border-5 border-secondary rounded">
+          <img src="Images/antipathy.jpg" class="card-img-top" alt="Angry sign">
+        </span>
+        <div class="card-body">
+          <h5 class="card-title">Antipathy</h5>
+        </div>
+      </div>
+
+      <div class="card m-4">
+        <span class="border border-5 border-secondary rounded">
+          <img src="Images/painting.jpg" class="card-img-top" alt="Painting">
+        </span>
+        <div class="card-body">
+          <h4 class="card-title text-center">Somber Nightmare</h4>
+        </div>
+      </div>
+
+      <div class="card m-4">
+        <span class="border border-5 border-secondary rounded">
+          <img src="Images/water1.jpg" class="card-img-top" alt="Woman underwater">
+        </span>
+        <div class="card-body">
+          <h5 class="card-title">In the Water</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
