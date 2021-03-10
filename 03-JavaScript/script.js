@@ -1,10 +1,10 @@
-// Assignment Code
+// Generate Button
 var generateBtn = document.querySelector("#generate");
 
 // Create Password
 function generatePassword() {
 
-  // Initialize Variables --> Best to use const/ var/ let??
+  // Initialize Variables
   const lowercase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
   var uppercase = lowercase.map(lowercase => lowercase.toUpperCase());
   var numeric = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
@@ -18,11 +18,11 @@ function generatePassword() {
   // Begin Prompts
   var lengthInput = prompt('Password length? (password must be 8 - 128 characters long)');
 
-
+  // Require Valid Password Length
   while((lengthInput >=8 && lengthInput <=128)==false) {
     lengthInput = prompt('Please enter valid length; Password must be 8 - 128 characters long');
     }
-    
+  // Character Selection | Require Minimum One Character  
   while (loop < 4) {
     for (var charType of charTypeArray) {
       loop += 1;
@@ -40,7 +40,7 @@ function generatePassword() {
     }
   }  
   
-
+  // Build Randomized Password From Selected Characters
   for(let i=0; i<lengthInput; i++) {
     let getType = Math.floor(Math.random() * selectedChar.length);
     let getElement = Math.floor(Math.random() * lengthInput);
@@ -51,7 +51,7 @@ function generatePassword() {
   return passwordString;
 }
 
-// Write password to the #password input
+// Write Password to #password Input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -61,5 +61,5 @@ function writePassword() {
   return passwordText.value;
 }
 
-// Add event listener to generate button
+// Add Event Listener to Generate Button
 generateBtn.addEventListener("click", writePassword);
